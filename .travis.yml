@@ -1,7 +1,0 @@
-language: r
-
-r_packages:
-  - testthat
-
-after_success:
-  - Rscript -e "library(testthat); source('t-test/t-test.R'); test_dir('t-test/tests/')"
