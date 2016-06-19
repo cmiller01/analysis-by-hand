@@ -5,5 +5,5 @@ sudo: false
 r_packages:
   - testthat
 
-script:
-  - t-test/run_me.R
+after_success:
+  - Rscript -e "library(testthat); source('t-test/t-test.R'); test_dir('t-test/tests/')"
