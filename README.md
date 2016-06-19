@@ -4,6 +4,9 @@ Implementation of some common data analysis methods without the benefit of reall
 Everything should be as basic as possible, albeit without reinventing sorting, transposing matricies, etc.
 
 Favoring simplicity over efficiency.
+## T-test
+
+## Correlation Coefficient
 
 ## ANOVA
 
