@@ -1,3 +1,9 @@
 language: r
 cache: packages
 sudo: false
+
+r_packages:
+  - testthat
+
+script:
+  - t-test/run_me.R
