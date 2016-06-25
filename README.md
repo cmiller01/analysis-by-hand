@@ -24,6 +24,7 @@ Would love to add:
 * Matlab/Octave
 * Julia
 * Go
+* JavaScript (seriously, pretty fast: http://julialang.org/)
 
 Feel free to branch or submit a PR if you want to help!
 
@@ -36,13 +37,21 @@ To run the tests execute:
 # Methods
 
 ## T-test
+see directory: `ttest`
 
 ## Correlation Coefficient
-
+WIP
 ## ANOVA
-
+TODO
 ## Linear Regression
-
+TODO
 ## Principal Component Analysis
-
+TODO
 ## K-means
+TODO
+## P-values
+see [American Statistical Assoc. statement on p-values](http://amstat.tandfonline.com/doi/full/10.1080/00031305.2016.1154108)
+
+TODO
+## Distributions
+TODO
