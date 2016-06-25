@@ -5,7 +5,9 @@ set.seed(1)
 x <- rnorm(50, mean = 0, sd = 1)
 y <- 0
 
-context("One-sample t-test")
-test_that("t test results are equal", {
-  expect_equal(one_sample_ttest(x,y),as.vector(t.test(x,mu=y)$statistic))
+context("ttest")
+describe("one_sample_ttest()", {
+  it("can calculate t test", {
+    expect_equivalent(one_sample_ttest(x,y),t.test(x,mu=y)$statistic)
+  })
 })
