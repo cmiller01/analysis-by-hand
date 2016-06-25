@@ -39,3 +39,7 @@ vignettes/*.pdf
 __pycache__/
 *.py[cod]
 *$py.class
+
+##### vscode
+*.vs_code/
+
