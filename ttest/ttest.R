@@ -1,6 +1,6 @@
 # t-tests
 
-one_sample_t_test <- function(x,y) {
+one_sample_ttest <- function(x,y) {
   # one sample t test
   # x = vector
   # y = single value

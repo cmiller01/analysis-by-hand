@@ -1,6 +1,5 @@
-# t tests
 
-def one_sample_t_test(x, y):
+def one_sample_ttest(x, y):
     """one sample t test
     x = list
     y = single value

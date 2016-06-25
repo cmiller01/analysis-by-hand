@@ -7,5 +7,5 @@ y <- 0
 
 context("One-sample t-test")
 test_that("t test results are equal", {
-  expect_equal(one_sample_t_test(x,y),as.vector(t.test(x,mu=y)$statistic))
+  expect_equal(one_sample_ttest(x,y),as.vector(t.test(x,mu=y)$statistic))
 })

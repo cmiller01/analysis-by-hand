@@ -1,6 +1,11 @@
 #!/usr/local/bin/Rscript
 library(testthat)
 
-source('t-test.R')
+source('ttest/ttest.R')
 
-test_dir('tests')
+message("Running python tests")
+system2('nosetests')
+
+message("Running R tests")
+test_dir('ttest/tests')
+

@@ -6,7 +6,7 @@ Everything should be as basic as possible, albeit without reinventing sorting, t
 Favoring simplicity over efficiency.
 
 # Requirements
-This project is using `R` and `python` as the main engines for analysis; you will need one or both to run the tests.
+This project is using `R` and `python` as the main engines for analysis; you will need both to run the tests.
 
 * R
   * Install R from here: http://cran.org
@@ -30,11 +30,8 @@ Feel free to branch or submit a PR if you want to help!
 # Testing
 These methods should return same values as the "built-in" methods and that is testable.
 
-To run all the tests for R use:
-TODO!!
-
-To run all the test for Python use:
-TODO!!
+To run the tests execute:
+`./run_tests.R` from root directory
 
 # Methods
 
