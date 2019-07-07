@@ -13,7 +13,7 @@ This project is using `R` and `python` as the main engines for analysis; you wil
   * Recommend RStudio too: http://rstudio.com
   * Required packages, install with `install.packages('package_name')` from R console
     * testthat
-* R
+* Python
   * Install Python 3 (if needed)
   * Recommend using `virtualenv` and `virtualenvwrapper`
   * Install package dependencies with `pip install -r requirements.txt`
