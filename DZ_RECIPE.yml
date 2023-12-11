@@ -1,0 +1,12 @@
+dev:
+  commands:
+  - command: python -m venv --copies ~/.venv && . ~/.venv/bin/activate && pip install
+      -r requirements.txt
+    directory: analysis-by-hand
+    name: install cmd
+  name: ""
+  packages:
+  - nixpkgs.gcc
+  - nixpkgs.python38
+  repos:
+  - https://github.com/cmiller01/analysis-by-hand
