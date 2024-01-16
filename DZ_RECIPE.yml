@@ -1,0 +1,63 @@
+dev:
+  commands:
+  - command: |
+      curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash -s stable && printf '\neval "$(~/.rbenv/bin/rbenv init -)"' >> /root/.profile && . /root/.profile && rbenv install 3.2.2 && rbenv global 3.2.2 && gem install bundler:2.5.4
+    directory: rails
+    name: install cmd
+  - command: bundle install
+    directory: rails
+    name: install cmd
+  - command: bundle exec bootsnap precompile --gemfile
+    directory: rails
+    name: install cmd
+  - command: yarn install --frozen-lockfile
+    directory: rails
+    name: install cmd
+  - command: npm i
+    directory: rails/actioncable
+    name: install cmd
+  - command: npm i
+    directory: rails/actiontext
+    name: install cmd
+  - command: npm i
+    directory: rails/activestorage
+    name: install cmd
+  name: "Rails"
+  id: rails
+  description: This quick start recipe builds a workspace with an instance of Rails.
+  packages:
+  - apt.autoconf
+  - apt.bison
+  - apt.build-essential
+  - apt.curl
+  - apt.default-libmysqlclient-dev
+  - apt.git
+  - apt.libdb-dev
+  - apt.libffi-dev
+  - apt.libgdbm-dev
+  - apt.libgdbm6
+  - apt.libmagickwand-dev
+  - apt.libncurses5-dev
+  - apt.libpq-dev
+  - apt.libreadline6-dev
+  - apt.libssl-dev
+  - apt.libvips-dev
+  - apt.libyaml-dev
+  - apt.procps
+  - apt.zlib1g-dev
+  - nixpkgs.imagemagick
+  - nixpkgs.nodePackages.yarn
+  - nixpkgs.nodejs_18
+  - nixpkgs.rustc
+  repos:
+  - https://github.com/rails/rails
+compute:
+  compute_name: default
+  os_family: UBUNTU_22_04
+  region: us-west-1
+  resources:
+    cpus: 4+
+    disk: 50
+network:
+  category: vm-public
+  network_name: default
